@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="Torpedo.MultiPlayer1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Torpedo"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1200">
+    <Grid>
+        <Grid Width="150" HorizontalAlignment="Left">
+            <Label Name="player1Scores" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="590"></Label>
+        </Grid>
+        <Grid Width="150" HorizontalAlignment="Right">
+            <Label Name="player2Scores" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="590"></Label>
+        </Grid>
+        <Grid Width="840" >
+            <Label Name ="player1Label" Width="100" Height="40" FontSize="20" HorizontalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Center" 
+                   Margin="0,30,0,0"></Label>
+            <Canvas Name="player1Canvas" Height="400" Width="400" HorizontalAlignment="Left" ></Canvas>
+            <Canvas Name="player1CanvasHelper" Height="400" Width="400" HorizontalAlignment="Right"></Canvas>
+            <Button Content="Other Player" Height="30" Width="100" Click="Player1" VerticalAlignment="Bottom" Margin="590,0,150,33"></Button>
+            <Button Name="againButton1" Height="30" Width="100" Content="Again" HorizontalAlignment="Left" Margin="100,0,0,33" VerticalAlignment="Bottom" />
+            <Button Name="exitButton1" Height="30" Width="100" Content="Exit" HorizontalAlignment="Left" Margin="236,0,0,33" VerticalAlignment="Bottom" />
+        </Grid>
+
+
+    </Grid>
+
+</UserControl>

@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="Torpedo.SinglePlayer"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Torpedo"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1200">
+    <Grid x:Name="name" KeyUp="Grid_KeyUp" Focusable="True" Loaded="Loaded">
+        <Grid Width="150" HorizontalAlignment="Left">
+            <Label Name="playerScores" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="590"></Label>
+        </Grid>
+        <Grid Width="150" HorizontalAlignment="Right">
+            <Label Name="computerScores" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="590"></Label>
+        </Grid>
+        <Grid Width="840">
+            <Canvas Name="playerCanvas" Height="400" Width="400" HorizontalAlignment="Left" Margin="0,100,0,50"></Canvas>
+            <Canvas Name="computerCanvas" Height="400" Width="400" HorizontalAlignment="Right" Margin="0,100,0,50" ></Canvas>
+            <Label Name ="playerLabel" Width="100" Height="40" FontSize="20" HorizontalContentAlignment="Center" VerticalAlignment="Top" Margin="150,30,590,0"></Label>
+            <Label Content="Computer" Width="100" Height="40" FontSize="20" HorizontalContentAlignment="Center" VerticalAlignment="Top" Margin="590,30,150,0" ></Label>
+        </Grid>
+
+    </Grid>
+</UserControl>
